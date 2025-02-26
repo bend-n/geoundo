@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Geoundo",
+  "version": "1.0",
+  "description": "adds undos for geogrid",
+  "icons": {
+    "48": "icon.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.geogridgame.com/*"],
+      "js": ["undo.js"]
+    }
+  ]
+}
